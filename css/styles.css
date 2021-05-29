@@ -4,7 +4,6 @@ body {
   font-size: 16px;
   margin: 0;
   width: 100vw;
-  /* background-color: rgb(238, 192, 192); */
 }
 
 header {
@@ -15,7 +14,6 @@ header {
 }
 
 .container {
-  /* background-color: lightpink; */
   margin-left: auto;
   margin-right: auto;
   /* display: flex; */
@@ -24,7 +22,6 @@ header {
 }
 
 .photo img {
-  background: white;
   width: 160px;
   height: 160px;
   border-radius: 16px;
@@ -34,11 +31,6 @@ header {
 .photo {
   text-align: center;
 }
-
-/* .profiel {
-  margin-left: 32px;
-  align-items: center;
-} */
 
 .profiel > h1 {
   font-weight: normal;
@@ -67,24 +59,24 @@ header {
 a {
   text-decoration: none;
 }
-  
-.work > h1 {
-  /* background-color: #3486ed; */
-  margin-bottom: 0;
+
+.work {
   width: 90vw;
-  font-weight: normal;
-  font-size: 1.5rem;
-  color: #333;
-  text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
 
+.work > h1 {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: left;
+}
+
 h2 {
-  /* background-color: #3486ed; */
   font-size: 1.2rem;
   margin-bottom: 8px;
-  /* margin-top: 32px; */
   color: #333;
 }
 
@@ -103,18 +95,16 @@ ul li {
 
 
 section {
-  /* background-color: green; */
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
 }
 
-.sanple {
-  /* background-color: gold; */
+.sample {
   width: 100%;
 }
 
-.banner ul {
+ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -128,14 +118,12 @@ section {
   margin-right: auto;
 }
 
-.sanple2 {
+.sample2 {
   overflow: scroll;
-  /* border: 2px solid #ccc; */
   width:100%;
 }
 
 .autoplay-slider {
-  /* background-color: green; */
   margin-bottom: 24px;
   display: flex;
   width: min-content;
@@ -145,14 +133,11 @@ section {
 .slide {
   height: 200px;
   width: 200px;
-  background: #3486ed;
   border: 1px solid #000;
   margin: 5px ;
-  /* position: relative; */
 }
 
 .autoplay-slider img {
-  /* position: absolute; */
   width: 200px;
   height: 200px;
 }
@@ -163,27 +148,132 @@ section {
 }
 }
 
-.sanple3 p {
-  /* background: royalblue; */
-  width: 100%;
+.sample3 {
   margin: 0;
-  margin-left: 16px;
-  margin-bottom: 16px;
+  padding: 0;
 }
 
-.nav img{
-  background: chartreuse;
+.container_top {
+  display: flex;
+}
+
+.container_top img {
+  height: 32%;
+  width: 32%;
+  border: 1px solid #000;
+  margin: 2px;
+}
+
+.product1 {
+  flex: 1;
+}
+.product2 {
+  flex: 1;
+}
+.product3 {
+  flex: 1;
+}
+
+.container_middle {
+  display: flex;
+}
+
+.container_middle  img {
+  height: 32%;
+  width: 32%;
+  border: 1px solid #000;
+  margin: 2px;
+}
+
+.product4 {
+  flex: 1;
+}
+.product5 {
+  flex: 1;
+}
+.product6 {
+  flex: 1;
+}
+
+.container_bottom {
+  display: flex;
+}
+
+.product7 {
+  height: 32.5%;
+  width: 32.5%;
+  border: 1px solid #000;
+  margin: 2px;
+}
+
+.product8 {
+  height: 32.5%;;
+  width: 32.5%;;
+  border: 1px solid #000;
+  margin: 2px;
+}
+
+.sample4 img {
+  width: 100%;
+}
+
+.sample4 P {
+  margin: 0 ;
+  background: rgb(236, 199, 76);
+  padding: 0.2em 1em;
+  border-radius: 5px;
+}
+
+.photo1 {
+  position: relative;
+  margin-top: 16px;
+}
+
+.photo1 > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.photo2 {
+  position: relative;
+  margin-top: 24px;
+}
+
+.photo2 > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.detail {
+  width: 90%;
+  margin: 24px auto 32px;
+}
+
+footer {
+  border-top: 3px solid rgb(2, 99, 10);
+}
+
+.info {
+  width: 90%;
+  margin: 24px auto;
+  }
+
+.nav img {
   width: 200px;
   height: 60px;
   margin-bottom: 34px;
-  margin-left: 100px;
+  float: right;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .5);
 }
 
-/* medium screen */
-@media (min-width: 600px) {
+/* /////////////////////
+////medium screen////
+///////////////////// */
+
+@media (min-width: 768px) {
   .container {
-    /* background-color: lightpink; */
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -198,13 +288,12 @@ section {
     border-radius: 16px;
     margin-left: 24px;
     }
-  
+
   .profiel {
     width: 60%;
-    /* background-color: aqua; */
     margin-left: 32px;
   }
-  
+
   .profiel > h1 {
     font-weight: normal;
     font-size: 1.5rem;
@@ -213,32 +302,38 @@ section {
     text-align: left;
   }
 
-  .arrow {
-    vertical-align: -5px;
-  }
-  
   .profiel p {
-    margin: 0;
-    font-size: 1.2rem;
     text-align: left;
-    color:rgb(236, 199, 76);
-    cursor: pointer;
-  }
-  
-  a {
-    text-decoration: none;
   }
 
-.sanple3 {
-  display: flex;
-  margin-top: 24px;
-  margin-bottom: 64px;
-}
+  .banner img {
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.sanple3 p {
-  white-space: nowrap
-}
+  .sample3 {
+    width: 600px;
+  }
 
-.sanple3 img {
-  margin: 0;
-}
+  .sample4 {
+    width: 600px;
+  }
+
+  footer {
+    width: 600px;
+  }
+
+  .info {
+    display: flex;
+  }
+
+  .nav img {
+    width: 200px;
+    height: 60px;
+    margin-top: 16px;
+    margin-left: 50px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .5);
+  }
